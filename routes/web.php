@@ -36,5 +36,6 @@ Route::get('/projects/{project}/edit', 'ProjectsController@edit');  // EDIT
 Route::patch('/projects/{project}', 'ProjectsController@update');   // UPDATE
 Route::delete('/projects/{project}', 'ProjectsController@destroy'); // DESTROY */
 
-Route::patch('/tasks/{task}', 'ProjectTasksController@update');
 Route::post('/projects/{project}/tasks', 'ProjectTasksController@store');
+Route::post('/completed-tasks/{task}', 'CompletedTasksController@store');
+Route::delete('/completed-tasks/{task}', 'CompletedTasksController@destroy');
