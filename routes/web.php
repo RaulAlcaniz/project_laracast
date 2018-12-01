@@ -35,3 +35,5 @@ Route::post('/projects', 'ProjectsController@store');               // CREATE
 Route::get('/projects/{project}/edit', 'ProjectsController@edit');  // EDIT
 Route::patch('/projects/{project}', 'ProjectsController@update');   // UPDATE
 Route::delete('/projects/{project}', 'ProjectsController@destroy'); // DESTROY */
+
+Route::patch('/tasks/{task}', 'ProjectTasksController@update');
